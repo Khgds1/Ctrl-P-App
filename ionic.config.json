@@ -1,5 +1,7 @@
 {
   "name": "ctrl+p",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

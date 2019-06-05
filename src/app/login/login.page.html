@@ -1,0 +1,36 @@
+<ion-content padding class="loginPage" scroll="false">
+<ion-grid style="height: 100%" >
+<ion-row justify-content-center align-items-center style="height: 80%" >
+<ion-grid class="login-container">
+<form #loginForm="ngForm" (ngSubmit)="login()"autocomplete="off"class="login-form">
+<ion-row align-items-center>
+<ion-col>
+<img src="/"width="200px"height="200px">
+</ion-col>
+</ion-row >
+<ion-row >
+<ion-col >
+<ion-list inset >
+<ion-item >
+<ion-input placeholder="Usuário" name="username" id="loginField" type="text" required [(ngModel)]="username" > </ion-input>
+</ion-item>
+<ion-item>
+<ion-input placeholder="Senha" name="password" id="passwordField" type="password" required [(ngModel)]="password" ></ion-input>
+</ion-item></ion-list>
+</ion-col>
+</ion-row>
+<ion-card-header>
+  <ion-card-subtitle>Descubra como funciona o nosso sistema </ion-card-subtitle>
+  <ion-card-title><a href="/login/login.page.html"><button>Login</button></a></ion-card-title>
+</ion-card-header>
+<ion-row>
+<ion-col>
+<div *ngIf="error" class="alert alert-danger" >{{error}}</div>
+<buttonion-button class="submit-btn" fulltype="submit" [disabled]="!loginForm.form.valid" >ENTRAR</button>
+</ion-col>
+</ion-row>
+</form>
+</ion-grid>
+</ion-row>
+</ion-grid>
+</ion-content>
