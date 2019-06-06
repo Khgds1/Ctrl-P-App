@@ -14,12 +14,6 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  },
-  { path: 'login',
-    loadChildren: './login/login.module#LoginPageModule'
-  },
-  { path: 'profile-artist',
-    loadChildren: './profile-artist/profile-artist.module#ProfileArtistPageModule'
   }
 ];
 

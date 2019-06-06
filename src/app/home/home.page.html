@@ -10,24 +10,38 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="Bem-Vindo ao App do Ctrl+P">
+    <ion-card class="profilecard">
       <ion-card-header>
         <ion-avatar>
-          <img src="https://b.catgirlsare.sexy/4bLZ.png">
+          <img src="https://b.catgirlsare.sexy/rQu3.png">
         </ion-avatar>
-        <ion-card-title>Olá, Kledyson Goes</ion-card-title>
-        <ion-card-subtitle>Enviando para o endereço: Rua São Jorge, 318</ion-card-subtitle>
+        <ion-card-title><ion-text color="light">Olá, Kledyson Goes</ion-text></ion-card-title>
+        <ion-card-subtitle><ion-text color="light">Enviando para o endereço: Rua São Jorge, 318</ion-text></ion-card-subtitle>
         <ion-button>Trocar endereço</ion-button><ion-button>Sair</ion-button>
       </ion-card-header>
       <ion-card-content>
       </ion-card-content>
     </ion-card>
     <ion-card>
-      <ion-card-header>Aviso: Preencha todas informações solicitadas para que seu projeto fiquei disponivel em nosso sistema, para que assim, algum artista possa produzir</ion-card-header>
+      <ion-card-header class="avisocolor"><ion-text color="light">Info: Preencha todas informações solicitadas e seu projeto ficará disponível em nosso sistema, para que assim, algum artista possa produzir</ion-text></ion-card-header>
     </ion-card>
-    <ion-card>
-      <ion-card-header>1.1 - Informações Básicas</ion-card-header>
-      <ion-card-title>Qual nome do projeto?</ion-card-title>
-      <ion-card-subtitle>*input*</ion-card-subtitle>
+    <ion-card class="cards">
+      <ion-card-header><ion-text color="light">1.1 - Informações Básicas</ion-text></ion-card-header>
+      <ion-card-title padding="2"><ion-text color="light">Qual nome do projeto?</ion-text></ion-card-title>
+      <ion-input type="text" placeholder="Ex: Mario Coin" padding="2" color="light"></ion-input>
+      <!--separar-->
+      <ion-card-header><ion-text color="light">1.2 - Informações da Impressão</ion-text></ion-card-header>
+      <ion-card-title padding="2"><ion-text color="light">Altura em cm</ion-text></ion-card-title>
+      <ion-input type="number" placeholder="Ex: 15" padding="2" color="light"></ion-input>
+      <!--separar-->
+      <ion-card-title padding="2"><ion-text color="light">Largura em cm</ion-text></ion-card-title>
+      <ion-input type="text" placeholder="Ex: 5" padding="2" color="light"></ion-input>
+      <!--separar-->
+      <ion-card-title padding="2"><ion-text color="light">Como deseja o produto?</ion-text></ion-card-title>
+      <ion-input type="text" padding="2" placeholder="Descreva com o máximo de detalhes como deseja o produto" color="light"></ion-input>
+      <!--separar-->
+      <ion-button onclick="alert('Solicitação Enviada :D Em no máximo 24 horas um de nossos artistas irá iniciar o seu projeto')" padding="2">Enviar Solicitação</ion-button>
+      <!--separar-->
+      <ion-card-title padding="2"><ion-text color="light"></ion-text></ion-card-title>
     </ion-card>
 </ion-content>
